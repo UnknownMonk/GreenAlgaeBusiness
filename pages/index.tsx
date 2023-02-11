@@ -1,11 +1,40 @@
 import { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import ProductCard from "../components/ProductCard";
-import { product } from "../pages/products/products";
+
 import Reviews from "../components/Reviews";
 // import getProducts from '../sfcc.js'
 
-let data = product;
+const data = [
+  {
+    id: 0,
+    name: "algae",
+    price: 1000,
+    longDescription: "Algae",
+    imageGroups: "/green2.jpg",
+  },
+  {
+    id: 1,
+    name: "algae",
+    price: 1000,
+    longDescription: "Algae",
+    imageGroups: "/green3.jpg",
+  },
+  {
+    id: 2,
+    name: "algae",
+    price: 1000,
+    longDescription: "Algae",
+    imageGroups: "/green4.jpg",
+  },
+  {
+    id: 3,
+    name: "algae",
+    price: 1000,
+    longDescription: "Algae",
+    imageGroups: "/green6.png",
+  },
+];
 
 export default function Gallery() {
   let shop = useRef<HTMLParagraphElement>();
